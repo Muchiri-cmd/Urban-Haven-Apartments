@@ -1,40 +1,101 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
-  font-family: "Urbanist", sans-serif;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-:root{
-  --white:#fff;
-  --black:#000;
+li {
+  list-style: none;
+}
 
-  --purple-60:#703BF7;
-  --purple-65:#8254F8;
-  --purple-70:#946CF9;
-  --purple-75:#A685FA;
-  --purple-90:#DBCEFD;
-  --purple-95:#E5D7FE;
-  --purple-97:#F7F7F8;
-  --purple-99:#FCFCFD;
+:root {
+  --white: #fff;
+  --black: #000;
 
-  --white-90:#E4E4E7;
-  --white-95:#F1F1F3;
-  --white-97:#F7F7F8;
-  --white-99:#FCFCFD;
+  --purple-60: #703bf7;
+  --purple-65: #8254f8;
+  --purple-70: #946cf9;
+  --purple-75: #a685fa;
+  --purple-90: #dbcefd;
+  --purple-95: #e5d7fe;
+  --purple-97: #f7f7f8;
+  --purple-99: #fcfcfd;
 
-  --grey-8:#141414;
-  --grey-10:#1A1A1A;
-  --grey-15:#262626;
-  --grey-20:#333333;
-  --grey-30:#4D4D4D;
-  --grey-40:#666666;
-  --grey-50:#808080;
-  --grey-60:#999999;
+  --white-90: #e4e4e7;
+  --white-95: #f1f1f3;
+  --white-97: #f7f7f8;
+  --white-99: #fcfcfd;
 
+  --grey-8: #141414;
+  --grey-10: #1a1a1a;
+  --grey-15: #262626;
+  --grey-20: #333333;
+  --grey-30: #4d4d4d;
+  --grey-40: #666666;
+  --grey-50: #808080;
+  --grey-60: #999999;
+}
 
+html {
+  font-size: 62.5%;
+}
 
+body {
+  font-size: 1.6rem;
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--grey-8);
+  color: var(--white);
+  padding: 2rem;
+}
+
+.header {
+  /* TODO : Add backgropund wavy lines design */
+  text-align: center;
+}
+.banner {
+  border-bottom: 1px solid var(--grey-15);
+  padding-bottom: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+
+.logo-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--purple-60);
+}
+.navbar-links ul {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.navbar-links ul li a:hover {
+  background-color: var(--grey-8);
+  border: 1px solid var(--grey-15);
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.contact-us-btn {
+  background-color: var(--purple-60);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 }
