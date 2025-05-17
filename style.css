@@ -51,6 +51,7 @@ body {
   background-color: var(--grey-8);
   color: var(--white);
   padding: 2rem;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -131,6 +132,7 @@ section {
   word-wrap: break-word;
   font-size: 2.5rem;
   font-weight: 400;
+  color: var(--grey-60);
 }
 
 .hero-btns {
@@ -286,4 +288,96 @@ section {
   font-size: 2rem;
   color: var(--purple-60);
   transform: rotate(45deg);
+}
+
+.section-desc {
+  font-weight: 400;
+  color: var(--grey-60);
+  margin-bottom: 2rem;
+}
+
+.apartments-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.apartments-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.apartments-container::-webkit-scrollbar-thumb {
+  background-color: var(--purple-60);
+  border-radius: 10px;
+}
+
+.apartment-card {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--grey-15);
+  border-radius: 20px;
+  background-color: var(--grey-8);
+  padding: 1rem;
+  transition: all 0.3s ease;
+  max-width: 37rem;
+  will-change: transform;
+}
+
+.apartment-card:hover {
+  border: 2px solid var(--purple-60);
+}
+
+.apartment-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.apartment-img-wrapper img {
+  width: 100%;
+  min-height: 28rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.apartment-desc {
+  padding: 1rem;
+}
+.apartment-desc-text {
+  color: var(--grey-60);
+  padding: 1rem 0;
+}
+
+.apartment-features > .features {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: row;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.apartment-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.price-text {
+  color: var(--grey-60);
 }
