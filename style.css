@@ -56,8 +56,15 @@ body {
 .header {
   /* TODO : Add backgropund wavy lines design */
   text-align: center;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  z-index: 999;
+  background-color: var(--grey-8);
+  top: 0;
+  margin-bottom: 10rem;
 }
+
 .banner {
   border-bottom: 1px solid var(--grey-15);
   padding-bottom: 1rem;
@@ -104,7 +111,7 @@ body {
 section {
   margin: 2rem 0;
   width: 80%;
-  margin: 4rem auto;
+  margin: 12rem auto;
 }
 
 .hero {
@@ -155,19 +162,25 @@ section {
   &:hover {
     cursor: pointer;
     transform: scale(1.05);
+    border: 1px solid var(--purple-60);
   }
 }
 
 .hero-cards {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .card {
   background-color: var(--grey-10);
   padding: 3rem;
   border-radius: 10px;
+  transition: all 0.6s ease;
+  &:hover {
+    border-right: 1px solid var(--purple-60);
+    border-top: 1px solid var(--purple-60);
+  }
 }
 .card > .number {
   font-size: 4rem;
@@ -217,4 +230,60 @@ section {
   min-width: 500px;
   min-height: 600px;
   border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.about-card {
+  padding: 3rem 5rem;
+  background-color: var(--grey-10);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-card:hover {
+  border-left: 1px solid var(--purple-60);
+  border-top: 1px solid var(--purple-60);
+  transition: all 0.3s ease;
+  & .icon-wrapper {
+    background-color: var(--purple-60);
+  }
+  & .icon-wrapper i {
+    color: var(--white);
+  }
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--purple-60);
+  margin-bottom: 2rem;
+}
+.icon-wrapper i {
+  color: var(--purple-75);
+}
+
+.fa-arrow-up {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--purple-60);
+  transform: rotate(45deg);
 }
