@@ -253,6 +253,7 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about-card:hover {
@@ -410,4 +411,118 @@ section {
 .photo img:hover {
   transform: scale(1.05);
   transition: all 0.5s ease;
+}
+
+.form {
+  padding: 5rem;
+  border: 2px solid var(--grey-15);
+  margin: 5rem 0;
+  border-radius: 10px;
+}
+.inputs {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.form-group input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey-15);
+  background-color: var(--grey-10);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.form-group textarea {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey-15);
+  background-color: var(--grey-10);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+.form-group #message {
+  margin-bottom: 3rem;
+}
+
+.btn-submit {
+  background-color: var(--purple-60);
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  color: var(--white);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem 2rem;
+  /* border-bottom:2px solid var(--grey-15);
+  border-top:2px solid var(--grey-15); */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-text {
+  max-width: 100rem;
+}
+
+.footer {
+  padding: 2rem;
+}
+
+.footer a:hover {
+  color: var(--purple-60);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer-input {
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey-15);
+  background-color: var(--grey-10);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-top: 2px solid var(--grey-15);
+  background-color: var(--grey-8);
+}
+
+.col {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.col ul li {
+  margin-bottom: 2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.copyright {
+  text-align: center;
+  padding: 2rem;
+  color: var(--grey-60);
 }
